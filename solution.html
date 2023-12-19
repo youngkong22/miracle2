@@ -1,0 +1,396 @@
+<!doctype html>
+<html lang="ko">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>따듯한 서재의 기적</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="solution-style.css">
+
+    <!-- 구글 폰트 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gugi&family=Noto+Sans+KR:wght@400;700&display=swap"
+        rel="stylesheet">
+</head>
+
+
+<body data-bs-spy="scroll" data-bs-target="#nav-menu">
+
+    <!-- 네비게이션 영역 시작 -->
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">
+        <div class="container">
+
+            <a class="gugi-font navbar-brand" href="#home">
+                <img src="images/logo.png" alt="로고">
+                따듯한 서재의 기적</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav-menu"
+                aria-controls="nav-menu" aria-expanded="false" aria-label="메뉴">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="nav-menu">
+                <ul class="navbar-nav ms-auto my-2">
+                    <li class="nav-item"><a class="nav-link" href="#home">홈</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about-chef">소개</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#portfolio">오늘의 추천 책</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#service">카테고리</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#blog">고민우체통</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">내 우체통</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- 네비게이션 영역 끝 -->
+
+
+    <!-- 헤더 영역 시작 -->
+    <header id="home" class="d-flex flex-column justify-content-center align-items-center vh-100 text-white">
+
+        <h1 class="display-3 fw-bold mb-5">따듯한 서재의 기적</h1>
+        <h4 class="fs-2 mb-3">개인 맞춤형 책 추천 웹사이트</h4>
+        <p class="lead mb-5">고민을 털어 놓으면 책을 추천해주는 
+            편지가 올 거예요</p>
+        <button type="button" data-bs-toggle="modal" data-bs-target="#bestmenuModal"
+            class="btn btn-outline-warning rounded-pill">따듯한 서재의 추천 도서</button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="bestmenuModal" tabindex="-1" aria-labelledby="bestmenuModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-sm modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title text-dark fs-5" id="bestmenuModalLabel">따듯한 서재 pick!</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="닫기"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="images/나미야.jpg" alt="나미야 잡화점의 기적" class="img-fluid">
+                        <p class="text-muted">"특별한 빛을 가진 사람은 반드시 누군가 알아봐준다."</p>
+                        <p class="text-muted">삼인조 좀도둑 쇼타, 아쓰야, 고헤이는 
+                            범행을 저지르고 달아나던 중 훔친 차의 
+                            배터리가 방전되어 멈춰버리는 비상사태를 맞딱드린다. 
+                            늦은 밤에 갈곳도 마땅찮아 발을 동동 구르고 있던 그때, 
+                            쇼타가 괜찮은 폐가가 하나 있다며 앞장서기 시작했고 아쓰야와 고헤이는 
+                            영문도 모른채 따라나선다. 그렇게 길을 걸은 끝에 
+                            오게 된 폐가는 문을 닫은지 30년은 훨씬 넘은 나미야 잡화점. 
+                            자물쇠가 망가진 가게 뒷문을 열고 안으로 들어온 세 사람. 
+                            가게 안을 둘러보던 아쓰야는 뒤에서 사람 기척을 느낀다. 
+                            혹시 누군가 자신들을 미행한건 아닌가 싶어 서둘러 가게 밖을 빠져나와 
+                            주위를 둘러봤지만 사람의 흔적은 어디에도 없었고 
+                            대신 편지 봉투 한 장만이 놓여져 있었다. 
+                            누가 이 야심한 밤에 폐업한 가게에 편지만 한 장 던져놓고 
+                            사라진 건지 궁금해하던 세 사람은 결국 편지에 답장을 해주는 지경에 이른다.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal 끝 -->
+    </header>
+    <!-- 헤더 영역 끝 -->
+
+
+    <!-- 쉐프 소개 섹션 시작 -->
+    <section class="container py-5" id="about-chef">
+
+        <div class="text-center py-5">
+            <h2 class="fw-bold">따듯한 서재의 기적 소개</h2>
+            <p class="lead text-muted">불안하고 답답하기만 한 현실,
+                책 속에서 힐링을 느껴보세요.</p>
+        </div>
+
+        <div class="row justify-content-center align-items-center mb-5">
+            <div class="col-md-5">
+                <img src="images/소개.jpg" alt="소개사진" class="img-fluid">
+            </div>
+            <div class="col-md-7 col-lg-5 px-lg-5">
+                <h3 class="fw-bold mb-3">따듯한 서재의 기적이란?</h3>
+                <p class="lh-lg">고민을 적어 우편함에 넣으면 시대를 
+                    초월하여 고민 해결 편지를 주고 받는
+                     책의 내용에서 영감을 받았습니다. 
+                    고민 우체통에 사연을 쓰면 다른 이용자가
+                    고민을 해결 할 수 있는 책편지를 작성해서 
+                    나의 우체통에 넣어줍니다. 
+                    책편지를 적어 주는 이용자는 포인트를 지급 받아
+                     쌓인 포인트로 책 구매가 가능합니다.</p>
+                <p class="lh-lg">온라인으로 책모임 시스템을 만들어 
+                    책을 통해 사람들과 소통이 가능합니다. 개인 맞춤형 책추천과 더불어 
+                    기분 별,  상황 별 카테고리를 만들어 
+                    위로와 감동을 받을 수 있습니다. </p>
+            </div>
+        </div>
+
+    </section>
+    <!-- 쉐프 소개 섹션 끝 -->
+
+
+    <!-- 포트폴리오 섹션 시작 -->
+    <section class="bg-dark py-5" id="portfolio">
+
+        <div class="container overflow-hidden">
+            <div class="text-center text-white py-5">
+                <h2 class="fw-bold mb-3">오늘의 추천 책</h2>
+                
+            </div>
+
+            <div class="row pb-5 g-4">
+                <div class="col-sm-6 col-lg-4">
+                    <img src="images/다운로드3.jpg"  alt="검색 1" class="img-fluid img-thumbnail">
+                </div>
+                <div class="col-sm-6 col-lg-4">
+                    <img src="images/다운로드1.jpg" alt="포트폴리오 사진 2" class="img-fluid img-thumbnail">
+                </div>
+                <div class="col-sm-6 col-lg-4">
+                    <img src="images/다운로드2.jpg" alt="포트폴리오 사진 3" class="img-fluid img-thumbnail">
+                </div>
+               
+                
+            </div>
+        </div>
+    </section>
+    <!-- 포트폴리오 섹션 끝 -->
+
+
+    <!-- 서비스 섹션 시작 -->
+    <section class="container overflow-hidden py-5" id="service">
+
+        <div class="text-center py-5">
+            <h2 class="fw-bold mb-3">카테고리</h2>
+            
+        </div>
+
+        <div class="row mb-5 g-4">
+            <div class="col-md-6">
+                <div class="card-hover shadow rounded p-4">
+                    <div class="d-flex align-items-center py-3">
+                        <img src="images/분야.png" alt="카테고리 1" class="rounded-circle">
+                        <div class="ms-3">
+                            <h3 class="fw-bold">분야별</h3>
+                            <p class="text-muted">분야별 책을 골라보세요</p>
+                        </div>
+                    </div>
+                    <p>에세이, 여행, 자기계발, 경제경영, 사회, 과학 역사 등 다양한 분야별 책이 마련되어 있습니다.</p>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="card-hover shadow rounded p-4">
+                    <div class="d-flex justify-content-end align-items-center py-3">
+                        <div class="text-end me-3">
+                            <h3 class="fw-bold">상황별</h3>
+                            <p class="text-muted">상황별 책을 골라보세요</p>
+                        </div>
+                        <img src="images/상황.png" alt="상황" class="rounded-circle">
+                    </div>
+                    <p>공부에 집중이 안될 때, 친구와 사이가 멀어졌을 때, 사험에서 떨어졌을 때 등 다양한 상황별 책이 마련되어 있습니다.</p>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="card-hover shadow rounded p-4">
+                    <div class="d-flex align-items-center py-3">
+                        <img src="images/기분.png" alt="기분" class="rounded-circle">
+                        <div class="ms-3">
+                            <h3 class="fw-bold">기분별</h3>
+                            <p class="text-muted">기분별 책을 골라보세요</p>
+                        </div>
+                    </div>
+                    <p>행볼할 때, 슬플 때, 우울할 때, 답답할 때,등 다양한 기분별 책이 마련되어 있습니다.</p>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="card-hover shadow rounded p-4">
+                    <div class="d-flex justify-content-end align-items-center py-3">
+                        <div class="text-end me-3">
+                            <h3 class="fw-bold">책모임</h3>
+                            <p class="text-muted">온라인으로 책모임에 참여해 보세요</p>
+                        </div>
+                        <img src="images/svg_thumb.png" alt="서비스 4" class="rounded-circle">
+                    </div>
+                    <p>온라인 책모임을 시작해 책을 통한 다양한 사람들과의 소통을 즐겨 보세요!
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- 서비스 섹션 끝 -->
+
+
+    <!-- SNS 섹션 시작 -->
+    <section class="py-5" id="sns-links">
+        <div class="container text-center text-white">
+            <h2 class="fw-bold mb-3">따듯한 우체통</h2>
+            <p>아래 우체통을 확인해주세요!</p>
+            
+        </div>
+    </section>
+    <!-- SNS 섹션 끝 -->
+
+
+    <!-- 블로그 섹션 시작 -->
+    <section class="container overflow-hidden py-5" id="blog">
+
+        <div class="text-center py-5">
+            <h2 class="fw-bold">고민 우체통</h2>
+            <p class="lead text-muted">고민 우체통에 있는 고민을 해결해 주세요! 공감편지와 그에 맞는 책 추천을 해주면 됩니다. 고민을 해결하면 포인트가 쌓여 책을 구매할 수 있습니다.</p>
+        </div>
+
+        <div class="row pb-5 gy-4">
+            <div class="col-sm-6 col-lg">
+                <div class="card">
+                    <img src="images/boy-6599131_1280.jpg" alt="고민 많은 중1" class="card-img-top">
+                    <div class="card-body text-center">
+                        <h3 class="card-title fs-4">고민 많은 중1</h3>
+                        <p class="card-text">안녕하세요 저는 중1 여학생입니다. 제가 친구들과 다른 학교로 진학을 하게 되어서 주변에 아는 친구가 한명도 없어요...</p>
+                        <a href="#" class="btn btn-warning btn-sm">자세히 보기</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-lg">
+                <div class="card">
+                    <img src="images/young-4843536_1280.jpg" alt="열등감 때문에 힘들어요" class="card-img-top">
+                    <div class="card-body text-center">
+                        <h3 class="card-title fs-4">열등감 때문에 힘들어요</h3>
+                        <p class="card-text">얼마전에 입시 끝낸 고3입니다. 다른 친구들은 하나둘씩 합격 소식이 들려 오는데 저는...</p>
+                        <a href="#" class="btn btn-warning btn-sm">자세히 보기</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-lg">
+                <div class="card">
+                    <img src="images/man2.jpg" alt="앞으로 어떻게..." class="card-img-top">
+                    <div class="card-body text-center">
+                        <h3 class="card-title fs-4">앞으로 어떻게...</h3>
+                        <p class="card-text">얼마전에 어머니가 돌아가셨습니다. 앞으로 어떻게 살아야 할지 막막하고 답답합니다. 저에게 하나뿐인...</p>
+                        <a href="#" class="btn btn-warning btn-sm">자세히 보기</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-lg">
+                <div class="card">
+                    <img src="images/woman-5718072_1280 (1).jpg" alt="진로고민 들어주세요" class="card-img-top">
+                    <div class="card-body text-center">
+                        <h3 class="card-title fs-4">진로고민 들어주세요</h3>
+                        <p class="card-text">안녕하세요! 현재 대학교 4학년에 재학중인 학생입니다. 졸업을 앞 둔 시점 저의 진로에 대한 고민이...</p>
+                        <a href="#" class="btn btn-warning btn-sm">자세히 보기</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- 블로그 섹션 끝 -->
+
+
+    <!-- 뉴스 섹션 시작 -->
+    <section class="py-5" id="news">
+        <div class="container">
+            <div class="row p-4 align-items-center">
+
+                <div class="col-lg-9  text-white">
+                    <h2 class="fw-bold mb-3">내 우체통</h2>
+                    <p>고민을 해결해줄 답이 들어 도착했을거예요. 추천 책도 같이 읽어보며 해쳐 나가길 따듯한 서재가 응원할게요! </p>
+                </div>
+
+                <div class="col-lg-3">
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-warning px-4" data-bs-toggle="modal"
+                        data-bs-target="#newsModal">
+                        바로가기
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="newsModal" tabindex="-1" aria-labelledby="newsModalTitle"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered modal-lg">
+                            <div class="modal-content ">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="newsModalTitle">내 우체통</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="닫기"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="ratio ratio-16x9">
+                                        <iframe src="http://127.0.0.1:5500/index.html"
+                                            title="YouTube video player"
+                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                            allowfullscreen></iframe>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Modal 끝 -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- 뉴스 섹션 끝 -->
+
+
+    <!-- 연락처 섹션 시작 -->
+    <section class="container overflow-hidden py-5 text-center" id="contact">
+
+        <div class="py-5">
+            <h2 class="fw-bold">문의하기</h2>
+            <p class="lead text-muted">따듯한 서재에 문의 사항이 있으면 아래로 연락바랍니다.</p>
+        </div>
+
+        <div class="row py-5 gy-3">
+            <div class="col-md-4">
+                <div class="shadow p-4 border-bottom border-4 border-warning">
+                    <i class="bi bi-envelope-heart fs-5 text-warning"></i>
+                    <h3 class="fw-bold fs-5 py-2">이메일</h3>
+                    <hr>
+                    <p class="text-muted">miracle@naver.com</p>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="shadow p-4 border-bottom border-4 border-success">
+                    <i class="bi bi-telephone-fill fs-5 text-success"></i>
+                    <h3 class="fw-bold fs-5 py-2">전화번호</h3>
+                    <hr>
+                    <p class="text-muted">010-000-0000</p>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="shadow p-4 border-bottom border-4 border-warning">
+                    <i class="bi bi-car-front-fill fs-5 text-warning"></i>
+                    <h3 class="fw-bold fs-5 py-2">주소</h3>
+                    <hr>
+                    <p class="text-muted">서울시 중구 세종대로</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- 연락처 섹션 끝 -->
+
+
+    <!-- 풋터 시작 -->
+    <footer class="bg-dark text-white">
+        <div class="container text-center">
+            <p class="py-4 mb-0">Copyright <i class="bi bi-c-circle"></i> 2023 Designed by youngbin <a
+                     target="_blank"
+                    class="gugi-font link-warning text-decoration-none">따듯한 서재의 기적
+                    Cook</a></p>
+        </div>
+    </footer>
+    <!-- 풋터 끝 -->
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
